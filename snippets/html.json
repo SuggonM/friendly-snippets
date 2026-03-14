@@ -188,7 +188,7 @@
     "dialog": {
         "prefix": "dialog",
         "body": "<dialog>$1</dialog>$2",
-        "description": "HTML - Defines a dialog (conversation)",
+        "description": "HTML - Defines a dialog box or modal window",
         "scope": "text.html"
     },
     "dfn": {
@@ -200,7 +200,7 @@
     "div": {
         "prefix": "div",
         "body": ["<div>", "\t$1", "</div>"],
-        "description": "HTML - Defines a section in a document",
+        "description": "HTML - Defines a generic block-level container",
         "scope": "text.html"
     },
     "dl": {
@@ -224,7 +224,7 @@
     "embed": {
         "prefix": "embed",
         "body": "<embed src=\"$1\">$2",
-        "description": "HTML - Defines external interactive content ot plugin",
+        "description": "HTML - Defines external interactive content or plugin",
         "scope": "text.html"
     },
     "fieldset": {
@@ -308,7 +308,7 @@
     "hgroup": {
         "prefix": "hgroup",
         "body": ["<hgroup>", "\t$1", "</hgroup>"],
-        "description": "HTML - Defines information about a section in a document",
+        "description": "HTML - Defines a heading grouped with subtitle or related text",
         "scope": "text.html"
     },
     "hr": {
@@ -351,7 +351,7 @@
     "iframe": {
         "prefix": "iframe",
         "body": "<iframe src=\"$1\">$2</iframe>$3",
-        "description": "HTML - Defines an inline sub window",
+        "description": "HTML - Defines a frame for embedding another document",
         "scope": "text.html"
     },
     "img": {
@@ -387,7 +387,7 @@
     "label": {
         "prefix": "label",
         "body": "<label for=\"$1\">$2</label>$3",
-        "description": "HTML - Defines an inline window",
+        "description": "HTML - Defines a label for a form element",
         "scope": "text.html"
     },
     "legend": {
@@ -411,7 +411,7 @@
     "main": {
         "prefix": "main",
         "body": ["<main>", "\t$1", "</main>"],
-        "description": "HTML - Defines an image map",
+        "description": "HTML - Defines the main content of the document",
         "scope": "text.html"
     },
     "map": {
@@ -585,7 +585,7 @@
     "span": {
         "prefix": "span",
         "body": "<span>$1</span>$2",
-        "description": "HTML - Defines a section in a document",
+        "description": "HTML - Defines a generic inline container",
         "scope": "text.html"
     },
     "strong": {
@@ -681,7 +681,7 @@
     "track": {
         "prefix": "track",
         "body": "<track src=\"$1\" kind=\"$2\" srclang=\"$3\" label=\"$4\">$5",
-        "description": "HTML - Defines a table row",
+        "description": "HTML - Defines text tracks for video or audio",
         "scope": "text.html"
     },
     "u": {
@@ -715,19 +715,19 @@
 "div.": {
         "prefix": "div.",
         "body": ["<div class=\"$1\">", "\t$2", "</div>"],
-        "description": "HTML - Defines a section in a document",
+        "description": "HTML - Defines a generic block-level container",
         "scope": "text.html"
     },
 "div#": {
         "prefix": "div#",
         "body": ["<div id=\"$1\">", "\t$2", "</div>"],
-        "description": "HTML - Defines a section in a document",
+        "description": "HTML - Defines a generic block-level container",
         "scope": "text.html"
     },
 "div.#": {
         "prefix": "div.#",
         "body": ["<div class=\"$1\" id=\"$2\">", "\t$3", "</div>"],
-        "description": "HTML - Defines a section in a document",
+        "description": "HTML - Defines a generic block-level container",
         "scope": "text.html"
     },
 "p.": {
