@@ -62,7 +62,7 @@
     "audio": {
         "prefix": "audio",
         "body": ["<audio controls>", "\t$1", "</audio>"],
-        "description": "HTML - Defines sounds content",
+        "description": "HTML - Defines embedded audio content",
         "scope": "text.html"
     },
     "b": {
@@ -92,7 +92,7 @@
     "big": {
         "prefix": "big",
         "body": "<big>$1</big>$2",
-        "description": "HTML - Used to make text bigger",
+        "description": "HTML - Used to make text bigger [DEPRECATED]",
         "scope": "text.html"
     },
     "blockquote": {
@@ -122,7 +122,7 @@
     "canvas": {
         "prefix": "canvas",
         "body": "<canvas id=\"$1\">$2</canvas>$3",
-        "description": "HTML - Defines graphics",
+        "description": "HTML - Defines a container for graphics drawn with JavaScript",
         "scope": "text.html"
     },
     "caption": {
@@ -153,12 +153,6 @@
         "prefix": "colgroup",
         "body": ["<colgroup>", "\t$1", "</colgroup>"],
         "description": "HTML - Defines group of table columns",
-        "scope": "text.html"
-    },
-    "command": {
-        "prefix": "command",
-        "body": "<command>$1</command>$2",
-        "description": "HTML - Defines a command button [not supported]",
         "scope": "text.html"
     },
     "datalist": {
@@ -242,7 +236,7 @@
     "figure": {
         "prefix": "figure",
         "body": ["<figure>", "\t$1", "</figure>"],
-        "description": "HTML - Defines a group of media content, and their caption",
+        "description": "HTML - Defines self‑contained content with an optional caption",
         "scope": "text.html"
     },
     "footer": {
@@ -372,12 +366,6 @@
         "description": "HTML - Defines inserted text",
         "scope": "text.html"
     },
-    "keygen": {
-        "prefix": "keygen",
-        "body": "<keygen name=\"$1\">$2",
-        "description": "HTML - Defines a generated key in a form",
-        "scope": "text.html"
-    },
     "kbd": {
         "prefix": "kbd",
         "body": "<kbd>$1</kbd>$2",
@@ -430,12 +418,6 @@
         "prefix": "menu",
         "body": ["<menu>", "\t$1", "</menu>"],
         "description": "HTML - Defines a menu list",
-        "scope": "text.html"
-    },
-    "menuitem": {
-        "prefix": "menuitem",
-        "body": "<menuitem>$1</menuitem>$2",
-        "description": "HTML - Defines a menu item [firefox only]",
         "scope": "text.html"
     },
     "meta": {
@@ -501,7 +483,7 @@
     "param": {
         "prefix": "param",
         "body": "<param name=\"$1\" value=\"$2\">$3",
-        "description": "HTML - Defines a parameter for an object",
+        "description": "HTML - Defines a parameter for an object [DEPRECATED]",
         "scope": "text.html"
     },
     "pre": {
@@ -513,7 +495,7 @@
     "progress": {
         "prefix": "progress",
         "body": "<progress value=\"$1\" max=\"$2\">$3</progress>$4",
-        "description": "HTML - Defines progress of a task of any kind",
+        "description": "HTML - Defines a visual indicator of task completion",
         "scope": "text.html"
     },
     "q": {
@@ -615,7 +597,7 @@
     "summary": {
         "prefix": "summary",
         "body": "<summary>$1</summary>$2",
-        "description": "HTML - Defines a visible heading for the detail element [limited support]",
+        "description": "HTML - Defines a summary or label for a details element",
         "scope": "text.html"
     },
     "table": {
@@ -663,7 +645,7 @@
     "time": {
         "prefix": "time",
         "body": "<time datetime=\"$1\">$2</time>$3",
-        "description": "HTML - Defines a date/time",
+        "description": "HTML - Defines a machine-readable date or time",
         "scope": "text.html"
     },
     "title": {
