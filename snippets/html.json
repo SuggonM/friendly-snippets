@@ -111,6 +111,11 @@
         "body": "<caption>$1</caption>",
         "description": "Defines a table caption"
     },
+    "center": {
+        "prefix": "center",
+        "body": "<center>$1</center>",
+        "description": "Defines center-aligned text [DEPRECATED]"
+    },
     "cite": {
         "prefix": "cite",
         "body": "<cite>$1</cite>",
@@ -130,6 +135,11 @@
         "prefix": "colgroup",
         "body": ["<colgroup>", "\t$0", "</colgroup>"],
         "description": "Defines group of table columns"
+    },
+    "data": {
+        "prefix": "data",
+        "body": "<data value=\"$1\">$2</data>",
+        "description": "Defines a machine‑readable value for its content"
     },
     "datalist": {
         "prefix": "datalist",
@@ -200,6 +210,11 @@
         "prefix": "embed",
         "body": "<embed src=\"$1\" width=\"$2\" height=\"$3\">",
         "description": "Defines external interactive content or plugin"
+    },
+    "fencedframe": {
+        "prefix": "fencedframe",
+        "body": "<fencedframe width=\"$1\" height=\"$2\"></fencedframe>",
+        "description": "Defines an iframe with enhanced privacy [Limited support]"
     },
     "fieldset": {
         "prefix": "fieldset",
@@ -416,6 +431,11 @@
         "body": "<param name=\"$1\" value=\"$2\">",
         "description": "Defines a parameter for an object [DEPRECATED]"
     },
+    "picture": {
+        "prefix": "picture",
+        "body": ["<picture>", "\t$0", "</picture>"],
+        "description": "Defines a container for responsive images"
+    },
     "pre": {
         "prefix": "pre",
         "body": "<pre>$0</pre>",
@@ -430,6 +450,11 @@
         "prefix": "q",
         "body": "<q>$1</q>",
         "description": "Defines a short quotation"
+    },
+    "rb": {
+        "prefix": "rb",
+        "body": "<rb>$1</rb>",
+        "description": "Defines a base text element for ruby annotations [DEPRECATED]"
     },
     "rp": {
         "prefix": "rp",
@@ -461,6 +486,11 @@
         "body": "<script src=\"$1\"></script>",
         "description": "Defines a script or links to an external script"
     },
+    "search": {
+        "prefix": "search",
+        "body": ["<search>", "\t$0", "</search>"],
+        "description": "Defines a container for search/filter UI"
+    },
     "section": {
         "prefix": "section",
         "body": ["<section>", "\t$0", "</section>"],
@@ -470,6 +500,16 @@
         "prefix": "select",
         "body": ["<select name=\"$1\">", "\t$0", "</select>"],
         "description": "Defines a selectable list with options"
+    },
+    "selectedcontent": {
+        "prefix": "selectedcontent",
+        "body": "<selectedcontent></selectedcontent>",
+        "description": "Defines content representing the selected option in a <select> [Limited support]"
+    },
+    "slot": {
+        "prefix": "slot",
+        "body": "<slot name=\"$1\">$2</slot>",
+        "description": "Defines a placeholder inside a web component"
     },
     "small": {
         "prefix": "small",
@@ -530,6 +570,11 @@
         "prefix": "td",
         "body": "<td>$1</td>",
         "description": "Defines a table cell"
+    },
+    "template": {
+        "prefix": "template",
+        "body": ["<template>", "\t$1", "</template>"],
+        "description": "Defines a fragment of HTML for manipulation by script"
     },
     "textarea": {
         "prefix": "textarea",
@@ -599,5 +644,10 @@
             "</video>"
         ],
         "description": "Defines a video embed"
+    },
+    "wbr": {
+        "prefix": "wbr",
+        "body": "<wbr>",
+        "description": "Defines an optional word break opportunity"
     }
 }
