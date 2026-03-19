@@ -121,6 +121,11 @@
         "body": "<cite>$1</cite>",
         "description": "Defines the title of a creative work"
     },
+    "class (attribute)": {
+        "prefix": "class",
+        "body": "class=\"$1\"",
+        "description": "Defines one or more class names for an element"
+    },
     "code": {
         "prefix": "code",
         "body": "<code>$1</code>",
@@ -300,6 +305,11 @@
         "prefix": "i",
         "body": "<i>$1</i>",
         "description": "Defines text with alternate emphasis"
+    },
+    "id (attribute)": {
+        "prefix": "id",
+        "body": "id=\"$1\"",
+        "description": "Defines a unique identifier for an element"
     },
     "iframe": {
         "prefix": "iframe",
@@ -540,6 +550,11 @@
         "prefix": "style",
         "body": ["<style>", "$0", "</style>"],
         "description": "Defines style rules for a document"
+    },
+    "style (attribute)": {
+        "prefix": "style",
+        "body": "style=\"$1\"",
+        "description": "Defines inline CSS styles for an element"
     },
     "sub": {
         "prefix": "sub",
